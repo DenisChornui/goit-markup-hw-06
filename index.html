@@ -546,15 +546,12 @@
         </div>
         <div class="subscribe">
           <p class="subscribe-text">Subscribe</p>
-          <form class="form-email" action="">
-            <label class="subscribe-label" for="">
-              <input 
-              class="input-email" 
-              type="email"
-              name="email"
-              placeholder="E-mail">
+          <form class="form-email">
+            <label class="subscribe-label">
+              <input class="input-email" type="email" name="email" placeholder="E-mail" />
             </label>
-            <button class="subscribe-btn" type="submit">Subscribe
+            <button class="subscribe-btn" type="submit"
+              >Subscribe
               <svg class="subscribe-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send_icon"></use>
               </svg>
@@ -571,6 +568,51 @@
             <use href="./images/icons.svg#icon-modal_close"></use>
           </svg>
         </button>
+
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form class="modal-form" name="modal_form">
+          <label class="form-label" for="modal_name">Name</label>
+          <div class="form-wrapper">
+            <input class="form-field" type="text" name="modal_name" id="modal_name" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-name_modal"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="modal_phone">Phone</label>
+          <div class="form-wrapper">
+            <input class="form-field" type="text" name="modal_phone" id="modal_phone" />
+            <svg class="form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone_modal"></use>
+            </svg>
+          </div>
+          <label class="form-label" for="modal_email">Email</label>
+          <div class="form-wrapper">
+            <input class="form-field" type="text" name="modal_email" id="modal_email" />
+            <svg class="form-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email_modal"></use>
+            </svg>
+          </div>
+
+          <label class="form-label" for="modal_comment">Comment</label>
+          <textarea
+            class="form-comment"
+            name="form_comment"
+            id="modal_comment"
+            rows="5"
+            placeholder="Text input">
+          </textarea>
+
+          <label class="form-agreement">
+            <input 
+            class="form-chek-input" 
+            type="checkbox" 
+            name="modal_agreement"/>
+            <span class="form-agreement-text">I accept the terms and conditions of the
+              <a class="form-agreement-link" href="" target="_blank" rel="noopener noreferrer">Privacy Policy</a></span>
+          </label>
+
+          <button class="form-btn" type="submit">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
